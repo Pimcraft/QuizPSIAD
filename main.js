@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('next-btn').addEventListener('click', goNextQuestion);
     document.getElementById('prev-btn').addEventListener('click', goPrevQuestion);
     document.getElementById('finish-btn').addEventListener('click', finishQuiz);
+    document.getElementById('restart-btn').addEventListener('click', () => {
+        location.reload();
+    });
 });
 
 /**

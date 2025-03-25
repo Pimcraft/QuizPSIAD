@@ -265,30 +265,20 @@ function renderOrderDragDrop(container, task, qIndex) {
         ul.appendChild(li);
     });
 
-    // Drag events
-    ul.addEventListener('dragstart', e => {
-        if (e.target.classList.contains('dd-item')) {
-            e.target.classList.add('dragging');
-        }
-    });
-
-    ul.addEventListener('dragend', e => {
-        e.target.classList.remove('dragging');
-    });
-
-    ul.addEventListener('dragover', e => {
-        e.preventDefault();
-        const dragging = ul.querySelector('.dragging');
-        if (!dragging) return;
-        const afterElement = getDragAfterElement(ul, e.clientY);
-        if (afterElement == null) {
-            ul.appendChild(dragging);
-        } else {
-            ul.insertBefore(dragging, afterElement);
-        }
-    });
-
     container.appendChild(ul);
+
+    // Obsługa mobilna i desktopowa dzięki SortableJS
+    Sortable.create(ul, {
+        animation: 150,
+        handle: '.grip-icon', // chwyt tylko za ikonkę
+        onEnd: () => {
+            captureUserAnswer(qIndex);
+            const nextBtn = document.getElementById('next-btn');
+            const finishBtn = document.getElementById('finish-btn');
+            if (userHasAnswered(qIndex)) enableNav(qIndex, nextBtn, finishBtn);
+        }
+    });
+
 }
 
 

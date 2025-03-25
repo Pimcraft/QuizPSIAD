@@ -71,7 +71,17 @@ body {
 }
 
 /* Przyciski */
-.btn-action,
+.btn-action2 {
+    background: #797979;
+    color: #FFF;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
 .btn-finish {
     background: #0078D4;
     color: #FFF;

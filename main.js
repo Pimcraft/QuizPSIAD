@@ -223,13 +223,22 @@ function renderOrderDragDrop(container, task, qIndex) {
     ul.className = 'dd-list';
 
     // tu "task.steps" jest już potasowane, ALE correct jest w task.correct
-    task.steps.forEach(step => {
-        let li = document.createElement('li');
-        li.className = 'dd-item';
-        li.draggable = true;
-        li.textContent = step;
-        ul.appendChild(li);
-    });
+    let li = document.createElement('li');
+    li.className = 'dd-item';
+    li.setAttribute('draggable', 'true');
+
+    let grip = document.createElement('span');
+    grip.className = 'grip-icon material-icons';
+    grip.textContent = 'drag_handle';
+
+    let textSpan = document.createElement('span');
+    textSpan.textContent = step;
+    textSpan.style.flex = '1';
+
+    li.appendChild(grip);
+    li.appendChild(textSpan);
+    ul.appendChild(li);
+
 
     ul.addEventListener('dragstart', e => {
         if (e.target.classList.contains('dd-item')) {

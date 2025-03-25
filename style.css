@@ -70,10 +70,10 @@ body {
     border: 1px solid #CCC;
 }
 
-/* Przyciski */
-.btn-action2 {
-    background: #797979;
-    color: #FFF;
+.btn-backward {
+    background: #6c757d;
+    /* szary, neutralny */
+    color: white;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
@@ -82,6 +82,12 @@ body {
     margin-right: 5px;
 }
 
+.btn-backward:hover {
+    background: #5a6268;
+}
+
+/* Przyciski */
+.btn-action,
 .btn-finish {
     background: #0078D4;
     color: #FFF;
@@ -104,6 +110,14 @@ body {
 
 .btn-finish:hover {
     background: #C50F1F;
+}
+
+@media (max-width: 600px) {
+    .btn-backward {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
 }
 
 #results-section {
@@ -349,6 +363,7 @@ body {
         font-size: 1.1em;
     }
 }
+
 
 @media (max-width: 600px) {
     .window-like-frame {

@@ -1,0 +1,308 @@
+/* style.css */
+
+/* Tło, czcionka (praktyki 2025: duża czytelność, wyraźny kontrast) */
+body {
+    margin: 0;
+    padding: 0;
+    background: #F2F2F2;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #333;
+}
+
+/* Okno w stylu pseudo-windows, ale z nowszym designem */
+.window-like-frame {
+    width: 90%;
+    max-width: 1500px;
+    margin: 30px auto;
+    border: 1px solid #AAA;
+    background-color: #FFFFFF;
+    /* zaokrąglenie */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* płaski cień */
+}
+
+.window-header {
+    background: linear-gradient(135deg, #E0E0E0, #FFFFFF);
+    padding: 12px 16px;
+    color: #444;
+    font-weight: 600;
+    border-bottom: 1px solid #CCC;
+    font-size: 16px;
+}
+
+.window-content {
+    padding: 16px;
+}
+
+/* Ekran powitalny */
+#welcome-screen {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#welcome-screen h2 {
+    margin-bottom: 10px;
+}
+
+/* Pasek odliczania */
+.countdown-bar {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding: 10px;
+    background: #FAFAFA;
+    border: 1px solid #DDD;
+}
+
+/* Kontener pytania */
+#question-container {
+    margin: 15px 0;
+    padding: 12px;
+    background: #FCFCFC;
+    border: 1px solid #DDD;
+}
+
+.question-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    background: #E8E8E8;
+    padding: 8px;
+    border: 1px solid #CCC;
+}
+
+/* Przyciski */
+.btn-action,
+.btn-finish {
+    background: #0078D4;
+    color: #FFF;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.btn-action:hover {
+    background: #005EA2;
+}
+
+.btn-finish {
+    background: #D83B01;
+    /* mocny pomarańcz/czerwony */
+}
+
+.btn-finish:hover {
+    background: #C50F1F;
+}
+
+#results-section {
+    margin-top: 30px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    padding: 24px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+#results-section h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Drag&drop list w 'order' */
+.dd-list {
+    list-style-type: none;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.dd-item {
+    margin: 4px 0;
+    padding: 8px;
+    border: 1px solid #CCC;
+    background: #F2F2F2;
+    cursor: move;
+}
+
+.dd-item.dragging {
+    opacity: 0.6;
+    border: 2px dashed #999;
+}
+
+.result-line .material-icons {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Kolorowanie poprawnych/niepoprawnych odpowiedzi w wynikach */
+.result-correct {
+    color: green;
+    font-weight: 300;
+}
+
+.result-wrong {
+    color: red;
+    font-weight: 300;
+}
+
+.order-result-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.order-result-item {
+    padding: 6px 12px;
+    background: #E0E0E0;
+    font-weight: 500;
+    border: 1px solid #CCC;
+}
+
+.order-result-item.correct {
+    background: #C8E6C9;
+    border-color: #66BB6A;
+}
+
+.order-result-item.incorrect {
+    background: #FFCDD2;
+    border-color: #E57373;
+}
+
+.result-block {
+    background: #FAFAFA;
+    border: 1px solid #E0E0E0;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 16px;
+    border-left: 5px solid #B0BEC5;
+    /* domyślny szary */
+}
+
+.result-block.correct-block {
+    border-left: 5px solid #2E7D32;
+}
+
+.result-block.wrong-block {
+    border-left: 5px solid #C62828;
+}
+
+.result-block strong {
+    font-size: 1.1em;
+}
+
+.result-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.result-block .result-line {
+    margin-top: 10px;
+    font-size: 1.02em;
+}
+
+.result-block .result-line span {
+    font-weight: bold;
+}
+
+.order-result-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.order-result-item {
+    padding: 6px 12px;
+    background: #EEE;
+    border: 1px solid #CCC;
+    font-weight: 500;
+}
+
+.order-result-item.correct {
+    background-color: #dff0d8;
+    border-color: #b2d8b2;
+}
+
+.order-result-item.incorrect {
+    background-color: #f8d7da;
+    border-color: #e0aeb0;
+}
+
+.result-icon {
+    font-family: 'Material Icons';
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.result-correct .result-icon {
+    color: #2E7D32;
+}
+
+.result-wrong .result-icon {
+    color: #C62828;
+}
+
+.result-explanation {
+    background: #fffded;
+    border-left: 4px solid #FBC02D;
+    margin-top: 12px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.result-summary {
+    background: #ededf7;
+    border: 1px solid #83838391;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+
+.score-header {
+    border-bottom: 1px solid rgb(199, 199, 199);
+    margin-bottom: 55px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.primary-summary {
+    background: #e9e9e983;
+    /* jasnożółte */
+    border: 1px solid #999999b7;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.explanation-box {
+    margin-top: 12px;
+    padding: 12px 16px;
+    border-left: 4px solid #2196F3;
+    background: #F0F8FF;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.explanation-icon {
+    font-family: 'Material Icons';
+    font-size: 20px;
+    color: #2196F3;
+    margin-top: 2px;
+}

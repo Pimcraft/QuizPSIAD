@@ -75,6 +75,18 @@ function createPreparedTask(task) {
 
     return copy;
 }
+function simulateMouseFromTouch(e, type) {
+    if (e.touches.length > 1) return; // tylko pojedynczy dotyk
+    const touch = e.changedTouches[0];
+    const simulatedEvent = new MouseEvent(type, {
+        bubbles: true,
+        cancelable: true,
+        clientX: touch.clientX,
+        clientY: touch.clientY
+    });
+    touch.target.dispatchEvent(simulatedEvent);
+    e.preventDefault();
+}
 
 /**
  * renderQuestion(qIndex):
@@ -231,6 +243,10 @@ function renderOrderDragDrop(container, task, qIndex) {
     task.steps.forEach(step => {
         let li = document.createElement('li');
         li.className = 'dd-item';
+        li.addEventListener('touchstart', e => simulateMouseFromTouch(e, 'mousedown'), { passive: false });
+        li.addEventListener('touchmove', e => simulateMouseFromTouch(e, 'mousemove'), { passive: false });
+        li.addEventListener('touchend', e => simulateMouseFromTouch(e, 'mouseup'), { passive: false });
+
         li.setAttribute('draggable', 'true');
 
         // Ikonka do złapania (lepsza obsługa mobilna)

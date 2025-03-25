@@ -25,23 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
  *  3) Losuje, kopiuje do preparedTasks
  */
 function startQuiz() {
-    fetch('zadania.json')
-        .then(r => r.json())
-        .then(data => {
-            allTasks = data;
-            shuffleArray(allTasks);
+    const questionCountEl = document.getElementById('question-count');
+    let requestedCount = parseInt(questionCountEl.value, 10) || 10;
 
-            // Ile pytań user chce
-            const questionCountEl = document.getElementById('question-count');
-            let countVal = parseInt(questionCountEl.value, 10) || 10;
-            if (countVal > allTasks.length) {
-                countVal = allTasks.length;
-            }
+    Promise.all([
+        fetch('zadania.json').then(r => r.json()),
+        fetch('zadania2.json').then(r => r.json())
+    ])
+        .then(([baseTasks, extraTasks]) => {
+            const half = Math.floor(requestedCount / 2);
+            const fromExtra = shuffleArray(extraTasks).slice(0, half);
+            const fromBase = shuffleArray(baseTasks).slice(0, requestedCount - half);
 
-            // Bierzemy countVal zadań
-            selectedTasks = allTasks.slice(0, countVal);
+            // najpierw zadania2, potem zadania
+            selectedTasks = [...fromExtra, ...fromBase];
 
-            // Tworzymy preparedTasks (kopie)
             preparedTasks = selectedTasks.map(task => createPreparedTask(task));
 
             document.getElementById('welcome-screen').style.display = 'none';
@@ -55,6 +53,7 @@ function startQuiz() {
         })
         .catch(err => console.error("Błąd wczytywania zadań", err));
 }
+
 
 /**
  * createPreparedTask(task):

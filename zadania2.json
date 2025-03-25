@@ -1,0 +1,366 @@
+[
+    {
+        "type": "simple_select",
+        "question": "Czym charakteryzuje się uczenie nadzorowane?",
+        "options": {
+            "A": "Nie wymaga danych z etykietami",
+            "B": "Działa tylko na obrazach",
+            "C": "Uczy się na danych wejściowych i odpowiadających im etykietach",
+            "D": "Działa wyłącznie w czasie rzeczywistym"
+        },
+        "correct": "C",
+        "explanation": "Uczenie nadzorowane wykorzystuje dane wejściowe i odpowiadające im etykiety do nauki modelu.",
+        "auto_id": 757
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych zadań to klasyczny przykład klasyfikacji?",
+        "options": {
+            "A": "Prognozowanie ceny mieszkania",
+            "B": "Ocenianie temperatury w skali Celsjusza",
+            "C": "Rozpoznawanie spamu w e-mailach",
+            "D": "Obliczanie średniego wzrostu"
+        },
+        "correct": "C",
+        "explanation": "Klasyfikacja polega na przypisywaniu danych do kategorii, jak np. spam lub nie-spam.",
+        "auto_id": 758
+    },
+    {
+        "type": "simple_select",
+        "question": "Który algorytm jest klasycznym przykładem algorytmu nadzorowanego?",
+        "options": {
+            "A": "K-means",
+            "B": "Drzewo decyzyjne",
+            "C": "Apriori",
+            "D": "t-SNE"
+        },
+        "correct": "B",
+        "explanation": "Drzewo decyzyjne to klasyczny algorytm nadzorowany, ponieważ uczy się na danych z etykietami.",
+        "auto_id": 759
+    },
+    {
+        "type": "simple_select",
+        "question": "Czym wyróżnia się głębokie uczenie (deep learning)?",
+        "options": {
+            "A": "Nie używa żadnych warstw",
+            "B": "Wykorzystuje sieci neuronowe o wielu warstwach",
+            "C": "Działa tylko na danych liczbowych",
+            "D": "Nie wymaga danych wejściowych"
+        },
+        "correct": "B",
+        "explanation": "Głębokie uczenie opiera się na wielowarstwowych sieciach neuronowych zdolnych do wyodrębniania złożonych cech.",
+        "auto_id": 760
+    },
+    {
+        "type": "simple_select",
+        "question": "Jaki typ sieci neuronowej najlepiej nadaje się do przetwarzania obrazów?",
+        "options": {
+            "A": "RNN",
+            "B": "Transformery",
+            "C": "CNN",
+            "D": "ANN"
+        },
+        "correct": "C",
+        "explanation": "CNN (Convolutional Neural Networks) są zaprojektowane do analizy danych przestrzennych, takich jak obrazy.",
+        "auto_id": 761
+    },
+    {
+        "type": "simple_select",
+        "question": "Jak działa mechanizm backpropagation w sieciach neuronowych?",
+        "options": {
+            "A": "Wysyła dane do przodu",
+            "B": "Oblicza dokładność modelu",
+            "C": "Optymalizuje wagi na podstawie błędów prognoz",
+            "D": "Tworzy nowe warstwy w sieci"
+        },
+        "correct": "C",
+        "explanation": "Backpropagation służy do dostosowywania wag sieci neuronowej na podstawie błędów wyjścia.",
+        "auto_id": 762
+    },
+    {
+        "type": "simple_select",
+        "question": "Na czym opierają się algorytmy genetyczne?",
+        "options": {
+            "A": "Na regułach logiki",
+            "B": "Na regułach dziedziczenia i mutacji biologicznej",
+            "C": "Na regułach probabilistycznych Bayesa",
+            "D": "Na klasyfikacji i regresji"
+        },
+        "correct": "B",
+        "explanation": "Algorytmy genetyczne wzorowane są na procesach ewolucji – selekcji, krzyżowaniu i mutacji.",
+        "auto_id": 763
+    },
+    {
+        "type": "simple_select",
+        "question": "Jakie dane reprezentuje 'osobnik' w algorytmach genetycznych?",
+        "options": {
+            "A": "Zestaw reguł decyzyjnych",
+            "B": "Pojedynczą funkcję matematyczną",
+            "C": "Potencjalne rozwiązanie problemu",
+            "D": "Model regresji"
+        },
+        "correct": "C",
+        "explanation": "Każdy osobnik w populacji reprezentuje jedno możliwe rozwiązanie danego problemu.",
+        "auto_id": 764
+    },
+    {
+        "type": "simple_select",
+        "question": "Który problem można rozwiązać algorytmem genetycznym?",
+        "options": {
+            "A": "Klasyfikacja obrazów",
+            "B": "Rozpoznawanie mowy",
+            "C": "Problem komiwojażera (TSP)",
+            "D": "Detekcja obiektów"
+        },
+        "correct": "C",
+        "explanation": "Algorytmy genetyczne świetnie sprawdzają się przy problemach optymalizacji, jak TSP.",
+        "auto_id": 765
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy warstwa backendowa w aplikacjach internetowych?",
+        "options": {
+            "A": "Do stylowania strony internetowej",
+            "B": "Do interakcji z użytkownikiem",
+            "C": "Do przetwarzania logiki aplikacji i komunikacji z bazą danych",
+            "D": "Do tworzenia grafik i animacji"
+        },
+        "correct": "C",
+        "explanation": "Backend obsługuje logikę działania aplikacji, łączy się z bazą danych i przetwarza żądania użytkownika.",
+        "auto_id": 766
+    },
+    {
+        "type": "simple_select",
+        "question": "Który język NIE jest typowo używany po stronie frontendowej?",
+        "options": {
+            "A": "HTML",
+            "B": "JavaScript",
+            "C": "CSS",
+            "D": "Python"
+        },
+        "correct": "D",
+        "explanation": "Python jest językiem backendowym – nie jest używany bezpośrednio do tworzenia interfejsu użytkownika.",
+        "auto_id": 767
+    },
+    {
+        "type": "simple_select",
+        "question": "W jakim formacie najczęściej zwracane są dane z API do aplikacji frontendowej?",
+        "options": {
+            "A": "CSV",
+            "B": "JPEG",
+            "C": "JSON",
+            "D": "MP4"
+        },
+        "correct": "C",
+        "explanation": "Dane z API zwracane są zwykle w formacie JSON – lekki i łatwy do przetwarzania w JavaScript.",
+        "auto_id": 768
+    },
+    {
+        "type": "simple_select",
+        "question": "Czym jest architektura trójwarstwowa w aplikacjach internetowych?",
+        "options": {
+            "A": "To model z bazą danych, frontendem i dodatkowym firewallem",
+            "B": "To sposób szyfrowania połączenia między aplikacją a serwerem",
+            "C": "To podział systemu na frontend, logikę aplikacji i bazę danych",
+            "D": "To technika kompresji danych w aplikacjach mobilnych"
+        },
+        "correct": "C",
+        "explanation": "Architektura trójwarstwowa dzieli aplikację na interfejs użytkownika, logikę biznesową i warstwę danych.",
+        "auto_id": 769
+    },
+    {
+        "type": "simple_select",
+        "question": "Co znajduje się w warstwie prezentacji w architekturze trójwarstwowej?",
+        "options": {
+            "A": "Kod backendowy",
+            "B": "Baza danych",
+            "C": "Interfejs użytkownika",
+            "D": "Serwer API"
+        },
+        "correct": "C",
+        "explanation": "Warstwa prezentacji to interfejs użytkownika, czyli część aplikacji widoczna dla użytkownika końcowego.",
+        "auto_id": 770
+    },
+    {
+        "type": "simple_select",
+        "question": "Dlaczego stosuje się architekturę trójwarstwową?",
+        "options": {
+            "A": "Żeby aplikacja szybciej się ładowała",
+            "B": "Aby umożliwić rozdzielenie odpowiedzialności i łatwiejszą rozbudowę",
+            "C": "Ponieważ pozwala na lepsze szyfrowanie danych",
+            "D": "Bo działa tylko w przeglądarce"
+        },
+        "correct": "B",
+        "explanation": "Trójwarstwowa architektura poprawia modularność, ułatwia zarządzanie kodem i rozwój aplikacji.",
+        "auto_id": 771
+    },
+    {
+        "type": "simple_select",
+        "question": "Która z technik NIE jest metodą pozyskiwania danych?",
+        "options": {
+            "A": "Web scraping",
+            "B": "API",
+            "C": "Szyfrowanie",
+            "D": "Formularze online"
+        },
+        "correct": "C",
+        "explanation": "Szyfrowanie chroni dane, ale nie służy do ich pozyskiwania.",
+        "auto_id": 772
+    },
+    {
+        "type": "simple_select",
+        "question": "Które urządzenie może służyć jako źródło danych w systemie IoT?",
+        "options": {
+            "A": "Czujnik temperatury",
+            "B": "Zwykła drukarka",
+            "C": "Stacja dysków optycznych",
+            "D": "Płyta główna"
+        },
+        "correct": "A",
+        "explanation": "Czujniki, np. temperatury, są typowym źródłem danych w systemach IoT.",
+        "auto_id": 773
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy web scraping?",
+        "options": {
+            "A": "Do szyfrowania danych",
+            "B": "Do analizowania bazy danych",
+            "C": "Do automatycznego pobierania danych ze stron internetowych",
+            "D": "Do wysyłania e-maili marketingowych"
+        },
+        "correct": "C",
+        "explanation": "Web scraping polega na automatycznym pobieraniu danych ze stron WWW.",
+        "auto_id": 774
+    },
+    {
+        "type": "simple_select",
+        "question": "Czym są relacyjne bazy danych?",
+        "options": {
+            "A": "Bazy danych przechowujące dane w formie grafów",
+            "B": "Bazy danych wykorzystujące strukturę plików binarnych",
+            "C": "Bazy danych przechowujące dane w tabelach z relacjami między nimi",
+            "D": "Bazy przechowujące tylko dane w postaci dokumentów JSON"
+        },
+        "correct": "C",
+        "explanation": "Relacyjne bazy danych organizują dane w tabelach z jasno zdefiniowanymi relacjami między nimi.",
+        "auto_id": 775
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych to przykład relacyjnej bazy danych?",
+        "options": {
+            "A": "MongoDB",
+            "B": "Redis",
+            "C": "PostgreSQL",
+            "D": "Neo4j"
+        },
+        "correct": "C",
+        "explanation": "PostgreSQL to popularna relacyjna baza danych obsługująca SQL i relacje między tabelami.",
+        "auto_id": 776
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy klucz obcy (FOREIGN KEY) w relacyjnej bazie danych?",
+        "options": {
+            "A": "Do identyfikacji unikalnych użytkowników",
+            "B": "Do szyfrowania kolumn",
+            "C": "Do tworzenia relacji między tabelami",
+            "D": "Do indeksowania danych"
+        },
+        "correct": "C",
+        "explanation": "Klucz obcy wskazuje na rekord w innej tabeli i tworzy relację między danymi.",
+        "auto_id": 777
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy operacja INNER JOIN w SQL?",
+        "options": {
+            "A": "Do wyświetlania tylko kolumn z jednej tabeli",
+            "B": "Do łączenia danych z tabel tylko jeśli mają dopasowanie w obu tabelach",
+            "C": "Do usuwania danych z dwóch tabel",
+            "D": "Do tworzenia nowej tabeli"
+        },
+        "correct": "B",
+        "explanation": "INNER JOIN łączy dane z dwóch tabel, ale tylko tam, gdzie są zgodne rekordy po obu stronach.",
+        "auto_id": 778
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych złączeń zwraca wszystkie rekordy z lewej tabeli, nawet jeśli nie ma dopasowania w prawej?",
+        "options": {
+            "A": "INNER JOIN",
+            "B": "FULL JOIN",
+            "C": "LEFT JOIN",
+            "D": "RIGHT JOIN"
+        },
+        "correct": "C",
+        "explanation": "LEFT JOIN zwraca wszystkie wiersze z lewej tabeli oraz pasujące z prawej – brakujące są uzupełniane NULL-ami.",
+        "auto_id": 779
+    },
+    {
+        "type": "simple_select",
+        "question": "Co to jest responsywność aplikacji internetowej?",
+        "options": {
+            "A": "Szybka reakcja na kliknięcia użytkownika",
+            "B": "Zdolność do dostosowania interfejsu do różnych ekranów i urządzeń",
+            "C": "Automatyczne aktualizacje oprogramowania",
+            "D": "Zwiększona wydajność bazy danych"
+        },
+        "correct": "B",
+        "explanation": "Responsywność to umiejętność dopasowania interfejsu do różnych rozdzielczości ekranu i urządzeń.",
+        "auto_id": 780
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych narzędzi CSS służy do budowania elastycznych układów responsywnych?",
+        "options": {
+            "A": "Flexbox",
+            "B": "SASS",
+            "C": "Bootstrap",
+            "D": "jQuery"
+        },
+        "correct": "A",
+        "explanation": "Flexbox to system układu CSS, który ułatwia tworzenie elastycznych i responsywnych layoutów.",
+        "auto_id": 781
+    },
+    {
+        "type": "simple_select",
+        "question": "Dlaczego responsywność jest ważna w aplikacjach internetowych?",
+        "options": {
+            "A": "Zwiększa liczbę kliknięć",
+            "B": "Pozwala zmniejszyć zużycie danych",
+            "C": "Zapewnia dobrą użyteczność na różnych urządzeniach",
+            "D": "Szyfruje dane użytkownika"
+        },
+        "correct": "C",
+        "explanation": "Responsywny interfejs zapewnia wygodne korzystanie z aplikacji na komputerach, tabletach i telefonach.",
+        "auto_id": 782
+    },
+    {
+        "type": "simple_select",
+        "question": "Jaki klucz w relacyjnej bazie danych wymusza unikalność i nie może być NULL?",
+        "options": {
+            "A": "Klucz obcy",
+            "B": "Klucz złożony",
+            "C": "Klucz główny",
+            "D": "Klucz indeksowy"
+        },
+        "correct": "C",
+        "explanation": "Klucz główny jednoznacznie identyfikuje rekord i nie dopuszcza powtórzeń ani wartości NULL.",
+        "auto_id": 783
+    },
+    {
+        "type": "simple_select",
+        "question": "Który z kluczy może przyjmować wartość NULL i nadal zapewnia unikalność?",
+        "options": {
+            "A": "PRIMARY KEY",
+            "B": "FOREIGN KEY",
+            "C": "UNIQUE",
+            "D": "INDEX"
+        },
+        "correct": "C",
+        "explanation": "UNIQUE zapewnia unikalność wartości, ale dopuszcza NULL w przypadku braku wartości.",
+        "auto_id": 784
+    }
+]

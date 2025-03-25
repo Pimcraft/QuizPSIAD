@@ -570,7 +570,10 @@ function getUserAnswer(prepTask, idx) {
         if (!ul) return { valueForCheck: [], display: '(nic)' };
         let lis = ul.querySelectorAll('li');
         let arrOfSteps = [];
-        lis.forEach(li => arrOfSteps.push(li.textContent));
+        lis.forEach(li => {
+            const spanText = li.querySelector('span:nth-child(2)');
+            arrOfSteps.push(spanText?.textContent?.trim() || '');
+        });
         // "1) stepA, 2) stepB..."
         let dispArr = arrOfSteps.map((s, i) => ((i + 1) + ") " + s));
         return {

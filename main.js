@@ -103,6 +103,7 @@ function renderQuestion(qIndex) {
         renderDefinitionCheckboxGroup(container, task, qIndex);
     }
     else if (task.type === 'order') {
+        console.log('[DEBUG] renderOrderDragDrop będzie wywołane', task);
         renderOrderDragDrop(container, task, qIndex);
     }
 
@@ -219,41 +220,52 @@ function renderDefinitionCheckboxGroup(container, task, qIndex) {
 
 /** order -> drag&drop (steps już potasowane w createPreparedTask) */
 function renderOrderDragDrop(container, task, qIndex) {
+    if (!task.steps || !Array.isArray(task.steps)) {
+        console.warn('Brak steps lub steps nie są tablicą w pytaniu:', task);
+        return;
+    }
+
     let ul = document.createElement('ul');
     ul.className = 'dd-list';
 
-    // tu "task.steps" jest już potasowane, ALE correct jest w task.correct
-    let li = document.createElement('li');
-    li.className = 'dd-item';
-    li.setAttribute('draggable', 'true');
+    task.steps.forEach(step => {
+        let li = document.createElement('li');
+        li.className = 'dd-item';
+        li.setAttribute('draggable', 'true');
 
-    let grip = document.createElement('span');
-    grip.className = 'grip-icon material-icons';
-    grip.textContent = 'drag_handle';
+        // Ikonka do złapania (lepsza obsługa mobilna)
+        let grip = document.createElement('span');
+        grip.className = 'grip-icon material-icons';
+        grip.textContent = 'drag_handle';
+        grip.style.cursor = 'grab';
 
-    let textSpan = document.createElement('span');
-    textSpan.textContent = step;
-    textSpan.style.flex = '1';
+        // Tekst
+        let text = document.createElement('span');
+        text.textContent = step;
+        text.style.flex = '1';
 
-    li.appendChild(grip);
-    li.appendChild(textSpan);
-    ul.appendChild(li);
+        li.appendChild(grip);
+        li.appendChild(text);
+        ul.appendChild(li);
+    });
 
-
+    // Drag events
     ul.addEventListener('dragstart', e => {
         if (e.target.classList.contains('dd-item')) {
             e.target.classList.add('dragging');
         }
     });
+
     ul.addEventListener('dragend', e => {
         e.target.classList.remove('dragging');
     });
+
     ul.addEventListener('dragover', e => {
         e.preventDefault();
-        let dragging = ul.querySelector('.dragging');
+        const dragging = ul.querySelector('.dragging');
         if (!dragging) return;
-        let afterElement = getDragAfterElement(ul, e.clientY);
-        if (!afterElement) {
+        const afterElement = getDragAfterElement(ul, e.clientY);
+        if (afterElement == null) {
             ul.appendChild(dragging);
         } else {
             ul.insertBefore(dragging, afterElement);
@@ -262,6 +274,7 @@ function renderOrderDragDrop(container, task, qIndex) {
 
     container.appendChild(ul);
 }
+
 
 function getDragAfterElement(ul, y) {
     const items = [...ul.querySelectorAll('.dd-item:not(.dragging)')];

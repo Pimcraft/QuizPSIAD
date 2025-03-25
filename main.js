@@ -17,7 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
         location.reload();
     });
 });
-
+/** Tasowanie tablicy (in-place) */
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+}
 /**
  * startQuiz():
  *  1) Wczytuje zadania
@@ -663,13 +669,7 @@ function checkCorrect(prepTask, userVal) {
     }
 }
 
-/** Tasowanie tablicy (in-place) */
-function shuffleArray(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-}
+
 
 /** Odliczanie */
 function updateCountdown() {

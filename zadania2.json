@@ -362,5 +362,850 @@
         "correct": "C",
         "explanation": "UNIQUE zapewnia unikalność wartości, ale dopuszcza NULL w przypadku braku wartości.",
         "auto_id": 784
+    },
+    {
+        "type": "simple_select",
+        "question": "Jaki typ zadania jest przykładem uczenia nadzorowanego?",
+        "options": {
+            "A": "Grupowanie klientów bez etykiet",
+            "B": "Klasyfikacja wiadomości jako spam lub nie-spam",
+            "C": "Odwzorowanie danych do przestrzeni 2D",
+            "D": "Redukcja wymiarowości danych"
+        },
+        "correct": "B",
+        "explanation": "Klasyfikacja to zadanie typowe dla uczenia nadzorowanego, ponieważ model uczy się na danych z etykietami.",
+        "auto_id": 785
+    },
+    {
+        "type": "simple_select",
+        "question": "Który typ sieci neuronowej najczęściej wykorzystuje się do analizy danych sekwencyjnych?",
+        "options": {
+            "A": "CNN",
+            "B": "RNN",
+            "C": "ANN",
+            "D": "SVM"
+        },
+        "correct": "B",
+        "explanation": "RNN, czyli rekurencyjne sieci neuronowe, są przeznaczone do danych sekwencyjnych, np. tekstu, mowy, szeregów czasowych.",
+        "auto_id": 786
+    },
+    {
+        "type": "simple_select",
+        "question": "Jaka operacja odpowiada za losowe modyfikacje w algorytmie genetycznym?",
+        "options": {
+            "A": "Selekcja",
+            "B": "Krzyżowanie",
+            "C": "Mutacja",
+            "D": "Sortowanie"
+        },
+        "correct": "C",
+        "explanation": "Mutacja w algorytmie genetycznym to losowa zmiana osobników w celu wprowadzenia różnorodności.",
+        "auto_id": 787
+    },
+    {
+        "type": "simple_select",
+        "question": "Jaką zaletę mają systemy rozproszone?",
+        "options": {
+            "A": "Zawsze działają offline",
+            "B": "Działają tylko na jednym serwerze",
+            "C": "Są skalowalne i odporne na awarie",
+            "D": "Nie wymagają komunikacji między komponentami"
+        },
+        "correct": "C",
+        "explanation": "Systemy rozproszone są skalowalne i odporne na awarie, ponieważ działają na wielu serwerach.",
+        "auto_id": 788
+    },
+    {
+        "type": "simple_select",
+        "question": "Co umożliwia programowanie współbieżne?",
+        "options": {
+            "A": "Sekwencyjne przetwarzanie danych",
+            "B": "Wykonywanie wielu zadań jednocześnie",
+            "C": "Zmniejszenie zużycia pamięci",
+            "D": "Zwiększenie liczby użytkowników"
+        },
+        "correct": "B",
+        "explanation": "Programowanie współbieżne pozwala wykonywać wiele zadań jednocześnie, poprawiając wydajność aplikacji.",
+        "auto_id": 789
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego najlepiej nadają się sieci konwolucyjne (CNN)?",
+        "options": {
+            "A": "Danych sekwencyjnych",
+            "B": "Danych tabelarycznych",
+            "C": "Analizy obrazów",
+            "D": "Przetwarzania zapytań SQL"
+        },
+        "correct": "C",
+        "explanation": "CNN zostały stworzone do przetwarzania danych przestrzennych, takich jak obrazy.",
+        "auto_id": 790
+    },
+    {
+        "type": "simple_select",
+        "question": "Która technika służy do wizualnego przedstawienia relacji między encjami w bazie danych?",
+        "options": {
+            "A": "Diagram aktywności",
+            "B": "UML Use Case",
+            "C": "Diagram ERD",
+            "D": "Mockup UI"
+        },
+        "correct": "C",
+        "explanation": "Diagram ERD pokazuje encje, atrybuty i relacje między nimi, służąc do projektowania baz danych.",
+        "auto_id": 791
+    },
+    {
+        "type": "simple_select",
+        "question": "Który diagram UML najlepiej pokazuje interakcję między obiektami w czasie?",
+        "options": {
+            "A": "Diagram klas",
+            "B": "Diagram sekwencji",
+            "C": "Diagram przypadków użycia",
+            "D": "Diagram komponentów"
+        },
+        "correct": "B",
+        "explanation": "Diagram sekwencji pokazuje komunikację i kolejność zdarzeń między obiektami w systemie.",
+        "auto_id": 792
+    },
+    {
+        "type": "simple_select",
+        "question": "Co oznacza litera 'T' w procesie ETL?",
+        "options": {
+            "A": "Transformacja",
+            "B": "Transport",
+            "C": "Transkrypcja",
+            "D": "Transfer"
+        },
+        "correct": "A",
+        "explanation": "'T' w ETL oznacza Transformację, czyli przekształcanie danych przed ich załadowaniem do bazy.",
+        "auto_id": 793
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy Hadoop?",
+        "options": {
+            "A": "Tworzenia stron internetowych",
+            "B": "Obsługi sieci komputerowej",
+            "C": "Rozproszonego przetwarzania dużych zbiorów danych",
+            "D": "Projektowania interfejsów użytkownika"
+        },
+        "correct": "C",
+        "explanation": "Hadoop to narzędzie do skalowalnego przetwarzania dużych zbiorów danych w środowiskach rozproszonych.",
+        "auto_id": 794
+    },
+    {
+        "type": "simple_select",
+        "question": "Co oznacza skrót CRUD?",
+        "options": {
+            "A": "Connect, Run, Upload, Download",
+            "B": "Create, Read, Update, Delete",
+            "C": "Compute, Restore, Upload, Drop",
+            "D": "Copy, Replace, Undo, Dump"
+        },
+        "correct": "B",
+        "explanation": "CRUD to podstawowe operacje na danych: Create, Read, Update, Delete.",
+        "auto_id": 795
+    },
+    {
+        "type": "simple_select",
+        "question": "Który test najlepiej sprawdza pojedynczą funkcję w kodzie?",
+        "options": {
+            "A": "Test jednostkowy",
+            "B": "Test integracyjny",
+            "C": "Test UI",
+            "D": "Test wydajnościowy"
+        },
+        "correct": "A",
+        "explanation": "Test jednostkowy sprawdza działanie pojedynczej funkcji lub metody.",
+        "auto_id": 796
+    },
+    {
+        "type": "simple_select",
+        "question": "Która z baz danych jest przykładem NoSQL?",
+        "options": {
+            "A": "MySQL",
+            "B": "PostgreSQL",
+            "C": "MongoDB",
+            "D": "SQLite"
+        },
+        "correct": "C",
+        "explanation": "MongoDB to dokumentowa baza NoSQL, przechowująca dane w formacie JSON.",
+        "auto_id": 797
+    },
+    {
+        "type": "simple_select",
+        "question": "Który język służy do zapytań w bazach relacyjnych?",
+        "options": {
+            "A": "SQL",
+            "B": "HTML",
+            "C": "Python",
+            "D": "JavaScript"
+        },
+        "correct": "A",
+        "explanation": "SQL to standardowy język zapytań używany w relacyjnych bazach danych.",
+        "auto_id": 798
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych jest przykładem zagrożenia w bazach danych?",
+        "options": {
+            "A": "Długi czas ładowania strony",
+            "B": "SQL Injection",
+            "C": "Brak responsywności",
+            "D": "Zbyt mały ekran"
+        },
+        "correct": "B",
+        "explanation": "SQL Injection to atak polegający na wstrzyknięciu złośliwego zapytania SQL.",
+        "auto_id": 799
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych NIE jest zagrożeniem w systemie operacyjnym?",
+        "options": {
+            "A": "Złośliwe oprogramowanie",
+            "B": "Nieautoryzowany dostęp",
+            "C": "Silne szyfrowanie",
+            "D": "Brak aktualizacji"
+        },
+        "correct": "C",
+        "explanation": "Silne szyfrowanie poprawia bezpieczeństwo, nie jest zagrożeniem.",
+        "auto_id": 800
+    },
+    {
+        "type": "simple_select",
+        "question": "Co umożliwia atak typu Man-in-the-Middle?",
+        "options": {
+            "A": "Zwiększenie przepustowości",
+            "B": "Przechwycenie komunikacji między dwiema stronami",
+            "C": "Zwiększenie bezpieczeństwa",
+            "D": "Ochronę danych osobowych"
+        },
+        "correct": "B",
+        "explanation": "Atak MitM pozwala atakującemu podszyć się pod jedną ze stron i przejąć komunikację.",
+        "auto_id": 801
+    },
+    {
+        "type": "simple_select",
+        "question": "Która warstwa modelu TCP/IP odpowiada za dostarczanie stron WWW?",
+        "options": {
+            "A": "Warstwa aplikacji",
+            "B": "Warstwa transportowa",
+            "C": "Warstwa internetowa",
+            "D": "Warstwa fizyczna"
+        },
+        "correct": "A",
+        "explanation": "Warstwa aplikacji zawiera protokoły takie jak HTTP, FTP czy SMTP.",
+        "auto_id": 802
+    },
+    {
+        "type": "simple_select",
+        "question": "Który element ERD przedstawia związek między encjami?",
+        "options": {
+            "A": "Prostokąt",
+            "B": "Owal",
+            "C": "Romb",
+            "D": "Trójkąt"
+        },
+        "correct": "C",
+        "explanation": "Romb w diagramie ERD oznacza relację między encjami.",
+        "auto_id": 803
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych to wymaganie niefunkcjonalne?",
+        "options": {
+            "A": "Użytkownik może dodać produkt do koszyka",
+            "B": "System musi szyfrować dane użytkownika",
+            "C": "Klient może zapłacić online",
+            "D": "Administrator może dodać nową kategorię"
+        },
+        "correct": "B",
+        "explanation": "Wymaganie dotyczące szyfrowania danych to przykład wymagania niefunkcjonalnego.",
+        "auto_id": 804
+    },
+    {
+        "type": "simple_select",
+        "question": "Jak aplikacje mobilne zazwyczaj komunikują się z bazami danych?",
+        "options": {
+            "A": "Bezpośrednio przez USB",
+            "B": "Przez REST API",
+            "C": "Tylko przez frontend",
+            "D": "Za pomocą arkuszy kalkulacyjnych"
+        },
+        "correct": "B",
+        "explanation": "Aplikacje mobilne komunikują się z serwerem i bazą danych przez REST API lub GraphQL.",
+        "auto_id": 805
+    },
+    {
+        "type": "simple_select",
+        "question": "Który klucz w bazie danych może wskazywać na rekord w innej tabeli?",
+        "options": {
+            "A": "PRIMARY KEY",
+            "B": "UNIQUE",
+            "C": "FOREIGN KEY",
+            "D": "ZŁOŻONY"
+        },
+        "correct": "C",
+        "explanation": "Klucz obcy (FOREIGN KEY) tworzy relację między tabelami w bazie danych.",
+        "auto_id": 806
+    },
+    {
+        "type": "simple_select",
+        "question": "Co robi operacja LEFT JOIN?",
+        "options": {
+            "A": "Zwraca tylko wspólne rekordy z dwóch tabel",
+            "B": "Usuwa dane z lewej tabeli",
+            "C": "Zwraca wszystkie rekordy z lewej tabeli, nawet bez dopasowań",
+            "D": "Zwraca tylko rekordy z prawej tabeli"
+        },
+        "correct": "C",
+        "explanation": "LEFT JOIN pobiera wszystkie rekordy z lewej tabeli i dopasowane z prawej (jeśli są).",
+        "auto_id": 807
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych wspiera responsywność strony internetowej?",
+        "options": {
+            "A": "SQL",
+            "B": "Java",
+            "C": "Media Queries",
+            "D": "Cron"
+        },
+        "correct": "C",
+        "explanation": "Media Queries w CSS pozwalają dostosować wygląd strony do różnych ekranów.",
+        "auto_id": 808
+    },
+    {
+        "type": "simple_select",
+        "question": "Za co odpowiada scheduler w systemie operacyjnym?",
+        "options": {
+            "A": "Za zarządzanie drukarką",
+            "B": "Za planowanie, który proces ma być wykonany",
+            "C": "Za aktualizacje systemu",
+            "D": "Za kontrolę dostępu do plików"
+        },
+        "correct": "B",
+        "explanation": "Scheduler decyduje, który proces zostanie uruchomiony jako następny.",
+        "auto_id": 809
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy komenda `usermod -aG` w systemie Linux?",
+        "options": {
+            "A": "Tworzy nowego użytkownika",
+            "B": "Zmienia grupę użytkownika",
+            "C": "Dodaje użytkownika do grupy",
+            "D": "Usuwa grupę"
+        },
+        "correct": "C",
+        "explanation": "Komenda `usermod -aG` służy do dodawania istniejącego użytkownika do wskazanej grupy.",
+        "auto_id": 810
+    },
+    {
+        "type": "simple_select",
+        "question": "Który protokół jest najczęściej używany w sieciach bezprzewodowych typu Wi-Fi?",
+        "options": {
+            "A": "802.11",
+            "B": "802.3",
+            "C": "FTP",
+            "D": "POP3"
+        },
+        "correct": "A",
+        "explanation": "Standard Wi-Fi opiera się na protokole 802.11.",
+        "auto_id": 811
+    },
+    {
+        "type": "simple_select",
+        "question": "Która z technologii frontendowych odpowiada za interaktywność strony?",
+        "options": {
+            "A": "HTML",
+            "B": "CSS",
+            "C": "JavaScript",
+            "D": "MySQL"
+        },
+        "correct": "C",
+        "explanation": "JavaScript umożliwia dodanie interakcji i dynamiki do stron internetowych.",
+        "auto_id": 812
+    },
+    {
+        "type": "simple_select",
+        "question": "Która warstwa w architekturze trójwarstwowej zawiera bazę danych?",
+        "options": {
+            "A": "Warstwa prezentacji",
+            "B": "Warstwa logiki",
+            "C": "Warstwa danych",
+            "D": "Warstwa użytkownika"
+        },
+        "correct": "C",
+        "explanation": "Warstwa danych odpowiada za przechowywanie i obsługę bazy danych.",
+        "auto_id": 813
+    },
+    {
+        "type": "simple_select",
+        "question": "Co to jest web scraping?",
+        "options": {
+            "A": "Tworzenie stron internetowych",
+            "B": "Zbieranie danych z formularzy",
+            "C": "Automatyczne pobieranie danych ze stron internetowych",
+            "D": "Szyfrowanie danych użytkowników"
+        },
+        "correct": "C",
+        "explanation": "Web scraping to technika automatycznego pobierania danych z witryn WWW.",
+        "auto_id": 814
+    },
+    {
+        "type": "simple_select",
+        "question": "Który algorytm nadzorowany najlepiej nadaje się do regresji?",
+        "options": {
+            "A": "K-means",
+            "B": "Apriori",
+            "C": "Regresja liniowa",
+            "D": "PCA"
+        },
+        "correct": "C",
+        "explanation": "Regresja liniowa to klasyczny algorytm nadzorowany używany do przewidywania wartości liczbowych.",
+        "auto_id": 815
+    },
+    {
+        "type": "simple_select",
+        "question": "Jaki mechanizm umożliwia trenowanie głębokich sieci neuronowych?",
+        "options": {
+            "A": "Backpropagation",
+            "B": "Zbiory rozmyte",
+            "C": "Zliczanie częstości",
+            "D": "Sortowanie"
+        },
+        "correct": "A",
+        "explanation": "Backpropagation (wsteczna propagacja błędu) służy do aktualizacji wag w sieciach neuronowych.",
+        "auto_id": 816
+    },
+    {
+        "type": "simple_select",
+        "question": "Czym w algorytmach genetycznych jest populacja?",
+        "options": {
+            "A": "Zbiór funkcji celu",
+            "B": "Zbiór danych uczących",
+            "C": "Zbiór możliwych rozwiązań",
+            "D": "Zbiór atrybutów"
+        },
+        "correct": "C",
+        "explanation": "Populacja to zbiór potencjalnych rozwiązań, które są modyfikowane przez selekcję, krzyżowanie i mutację.",
+        "auto_id": 817
+    },
+    {
+        "type": "simple_select",
+        "question": "Co najczęściej odpowiada za komunikację między mikrousługami?",
+        "options": {
+            "A": "MySQL",
+            "B": "CSS",
+            "C": "REST API",
+            "D": "HTML"
+        },
+        "correct": "C",
+        "explanation": "Komunikacja między mikrousługami zazwyczaj odbywa się przez REST API lub komunikaty.",
+        "auto_id": 818
+    },
+    {
+        "type": "simple_select",
+        "question": "Który język w Pythonie obsługuje współbieżność za pomocą asyncio?",
+        "options": {
+            "A": "threading",
+            "B": "multiprocessing",
+            "C": "asyncio",
+            "D": "socket"
+        },
+        "correct": "C",
+        "explanation": "`asyncio` to biblioteka Pythona do obsługi asynchronicznych operacji I/O.",
+        "auto_id": 819
+    },
+    {
+        "type": "simple_select",
+        "question": "Która sieć potrafi zapamiętywać poprzednie stany?",
+        "options": {
+            "A": "CNN",
+            "B": "RNN",
+            "C": "SVM",
+            "D": "k-NN"
+        },
+        "correct": "B",
+        "explanation": "RNN (sieci rekurencyjne) posiadają pamięć stanów, dzięki czemu analizują sekwencje danych.",
+        "auto_id": 820
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy diagram klas UML?",
+        "options": {
+            "A": "Do pokazywania procesu algorytmu",
+            "B": "Do opisu interfejsu graficznego",
+            "C": "Do pokazania struktury danych i relacji",
+            "D": "Do rejestrowania błędów"
+        },
+        "correct": "C",
+        "explanation": "Diagram klas przedstawia klasy, ich atrybuty, metody i relacje między nimi.",
+        "auto_id": 821
+    },
+    {
+        "type": "simple_select",
+        "question": "Który diagram UML najlepiej pokazuje przebieg procesu z warunkami?",
+        "options": {
+            "A": "Diagram klas",
+            "B": "Diagram aktywności",
+            "C": "Diagram sekwencji",
+            "D": "Diagram komponentów"
+        },
+        "correct": "B",
+        "explanation": "Diagram aktywności pokazuje przepływ czynności, warunki i decyzje w procesie.",
+        "auto_id": 822
+    },
+    {
+        "type": "simple_select",
+        "question": "W jakim celu stosuje się transformację w ETL?",
+        "options": {
+            "A": "Aby wczytać dane z pliku",
+            "B": "Aby przesłać dane do API",
+            "C": "Aby oczyścić i przekształcić dane",
+            "D": "Aby zgrać dane z dysku"
+        },
+        "correct": "C",
+        "explanation": "Transformacja w procesie ETL to etap przygotowania danych do dalszej analizy.",
+        "auto_id": 823
+    },
+    {
+        "type": "simple_select",
+        "question": "Co oznacza skrót HDFS w Hadoopie?",
+        "options": {
+            "A": "Hyper Data Format System",
+            "B": "Hadoop Distributed File System",
+            "C": "High Definition File System",
+            "D": "Host Data Fusion System"
+        },
+        "correct": "B",
+        "explanation": "HDFS to Hadoop Distributed File System – system rozproszonego przechowywania danych.",
+        "auto_id": 824
+    },
+    {
+        "type": "simple_select",
+        "question": "Który z elementów CRUD odpowiada za modyfikację danych?",
+        "options": {
+            "A": "Create",
+            "B": "Read",
+            "C": "Update",
+            "D": "Delete"
+        },
+        "correct": "C",
+        "explanation": "Update oznacza modyfikację istniejących rekordów w bazie danych.",
+        "auto_id": 825
+    },
+    {
+        "type": "simple_select",
+        "question": "Który test symuluje działania użytkownika w aplikacji?",
+        "options": {
+            "A": "Unit test",
+            "B": "Integration test",
+            "C": "End-to-end test",
+            "D": "Stress test"
+        },
+        "correct": "C",
+        "explanation": "Testy end-to-end sprawdzają całe scenariusze użytkownika od początku do końca.",
+        "auto_id": 826
+    },
+    {
+        "type": "simple_select",
+        "question": "Który typ bazy danych jest dokumentowy?",
+        "options": {
+            "A": "MySQL",
+            "B": "MongoDB",
+            "C": "PostgreSQL",
+            "D": "SQLite"
+        },
+        "correct": "B",
+        "explanation": "MongoDB przechowuje dane w formacie dokumentów BSON (rozszerzenie JSON).",
+        "auto_id": 827
+    },
+    {
+        "type": "simple_select",
+        "question": "Która cecha NIE dotyczy baz relacyjnych?",
+        "options": {
+            "A": "Tabele z kolumnami",
+            "B": "SQL jako język zapytań",
+            "C": "Struktura grafowa",
+            "D": "Klucze główne i obce"
+        },
+        "correct": "C",
+        "explanation": "Struktura grafowa dotyczy baz NoSQL typu grafowego, jak Neo4j.",
+        "auto_id": 828
+    },
+    {
+        "type": "simple_select",
+        "question": "Jak zabezpieczyć się przed SQL Injection?",
+        "options": {
+            "A": "Zawsze używać SELECT *",
+            "B": "Nie używać WHERE",
+            "C": "Stosować zapytania parametryzowane",
+            "D": "Używać HTML w bazie"
+        },
+        "correct": "C",
+        "explanation": "Zapytania parametryzowane zapobiegają wstrzyknięciu złośliwego kodu SQL.",
+        "auto_id": 829
+    },
+    {
+        "type": "simple_select",
+        "question": "Co stanowi częsty problem bezpieczeństwa w systemach operacyjnych?",
+        "options": {
+            "A": "Szyfrowanie danych",
+            "B": "Aktualizacje oprogramowania",
+            "C": "Nieautoryzowany dostęp",
+            "D": "Szybkie ładowanie systemu"
+        },
+        "correct": "C",
+        "explanation": "Brak kontroli dostępu może umożliwić nieautoryzowane działania w systemie.",
+        "auto_id": 830
+    },
+    {
+        "type": "simple_select",
+        "question": "Jakim atakiem jest DDoS?",
+        "options": {
+            "A": "Podszywanie się pod użytkownika",
+            "B": "Masowe zapytania prowadzące do przeciążenia",
+            "C": "Przechwycenie hasła",
+            "D": "Atak przez Bluetooth"
+        },
+        "correct": "B",
+        "explanation": "DDoS polega na zalewaniu serwera dużą ilością zapytań, by uniemożliwić jego działanie.",
+        "auto_id": 831
+    },
+    {
+        "type": "simple_select",
+        "question": "Jaka warstwa TCP/IP odpowiada za niezawodność przesyłu?",
+        "options": {
+            "A": "Internetowa",
+            "B": "Aplikacji",
+            "C": "Transportowa",
+            "D": "Dostępu do sieci"
+        },
+        "correct": "C",
+        "explanation": "Warstwa transportowa (np. TCP) odpowiada za dostarczenie danych bez błędów.",
+        "auto_id": 832
+    },
+    {
+        "type": "simple_select",
+        "question": "Co symbolizuje prostokąt w ERD?",
+        "options": {
+            "A": "Relację",
+            "B": "Atrybut",
+            "C": "Encję",
+            "D": "Komentarz"
+        },
+        "correct": "C",
+        "explanation": "Encje w ERD przedstawiane są jako prostokąty.",
+        "auto_id": 833
+    },
+    {
+        "type": "simple_select",
+        "question": "Które z poniższych określeń pasuje do wymagania funkcjonalnego?",
+        "options": {
+            "A": "System musi działać 24/7",
+            "B": "Użytkownik może dodać produkt do koszyka",
+            "C": "Dane muszą być szyfrowane",
+            "D": "Aplikacja ładuje się w 2 sekundy"
+        },
+        "correct": "B",
+        "explanation": "Wymagania funkcjonalne opisują, co użytkownik może wykonać w systemie.",
+        "auto_id": 834
+    },
+    {
+        "type": "simple_select",
+        "question": "Który z poniższych protokołów jest używany do pobierania danych z serwera przez przeglądarkę?",
+        "options": {
+            "A": "SMTP",
+            "B": "HTTP",
+            "C": "FTP",
+            "D": "SSH"
+        },
+        "correct": "B",
+        "explanation": "HTTP to protokół używany do komunikacji przeglądarki z serwerem WWW.",
+        "auto_id": 845
+    },
+    {
+        "type": "simple_select",
+        "question": "Która warstwa TCP/IP odpowiada za fizyczne przesyłanie danych?",
+        "options": {
+            "A": "Warstwa aplikacji",
+            "B": "Warstwa internetowa",
+            "C": "Warstwa dostępu do sieci",
+            "D": "Warstwa transportowa"
+        },
+        "correct": "C",
+        "explanation": "Warstwa dostępu do sieci odpowiada za fizyczne przesyłanie danych kablami, Wi-Fi itp.",
+        "auto_id": 846
+    },
+    {
+        "type": "simple_select",
+        "question": "Który element diagramu ERD reprezentuje atrybut encji?",
+        "options": {
+            "A": "Owal",
+            "B": "Romb",
+            "C": "Prostokąt",
+            "D": "Strzałka"
+        },
+        "correct": "A",
+        "explanation": "Atrybuty w ERD przedstawiane są jako owale połączone z encjami.",
+        "auto_id": 847
+    },
+    {
+        "type": "simple_select",
+        "question": "Czym różni się wymaganie funkcjonalne od niefunkcjonalnego?",
+        "options": {
+            "A": "Niefunkcjonalne opisuje co system robi",
+            "B": "Funkcjonalne dotyczy jakości działania",
+            "C": "Funkcjonalne określa konkretne funkcje",
+            "D": "Niefunkcjonalne zawiera dane wejściowe"
+        },
+        "correct": "C",
+        "explanation": "Wymagania funkcjonalne opisują konkretne funkcje systemu.",
+        "auto_id": 848
+    },
+    {
+        "type": "simple_select",
+        "question": "Który język backendowy nie jest dynamicznie typowany?",
+        "options": {
+            "A": "Python",
+            "B": "PHP",
+            "C": "Node.js",
+            "D": "Java"
+        },
+        "correct": "D",
+        "explanation": "Java to język statycznie typowany, w przeciwieństwie do Pythona czy PHP.",
+        "auto_id": 849
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy ORM w aplikacjach internetowych?",
+        "options": {
+            "A": "Tworzy zapytania SQL jako ciągi znaków",
+            "B": "Pozwala na interakcję z bazą danych poprzez obiekty",
+            "C": "Umożliwia budowanie interfejsu użytkownika",
+            "D": "Zarządza routingiem żądań HTTP"
+        },
+        "correct": "B",
+        "explanation": "ORM (Object-Relational Mapping) pozwala pracować z bazą danych przy użyciu obiektów.",
+        "auto_id": 850
+    },
+    {
+        "type": "simple_select",
+        "question": "Który z kluczy w bazie danych może być złożony z więcej niż jednej kolumny?",
+        "options": {
+            "A": "Klucz główny",
+            "B": "Klucz obcy",
+            "C": "Klucz złożony",
+            "D": "Klucz indeksowy"
+        },
+        "correct": "C",
+        "explanation": "Klucz złożony składa się z więcej niż jednej kolumny, aby zapewnić unikalność.",
+        "auto_id": 851
+    },
+    {
+        "type": "simple_select",
+        "question": "Które złączenie w SQL zwraca tylko dopasowane rekordy z obu tabel?",
+        "options": {
+            "A": "LEFT JOIN",
+            "B": "RIGHT JOIN",
+            "C": "FULL JOIN",
+            "D": "INNER JOIN"
+        },
+        "correct": "D",
+        "explanation": "INNER JOIN zwraca tylko te rekordy, które mają dopasowanie w obu tabelach.",
+        "auto_id": 852
+    },
+    {
+        "type": "simple_select",
+        "question": "Która jednostka w CSS pomaga w responsywności względem szerokości ekranu?",
+        "options": {
+            "A": "px",
+            "B": "vh",
+            "C": "em",
+            "D": "vw"
+        },
+        "correct": "D",
+        "explanation": "`vw` oznacza procent szerokości widoku (viewport), co pomaga w responsywności.",
+        "auto_id": 853
+    },
+    {
+        "type": "simple_select",
+        "question": "Co przechowuje PCB (Process Control Block) w systemie operacyjnym?",
+        "options": {
+            "A": "Kod błędu procesu",
+            "B": "Identyfikator i stan procesu",
+            "C": "Informacje o karcie sieciowej",
+            "D": "Parametry wejściowe użytkownika"
+        },
+        "correct": "B",
+        "explanation": "PCB zawiera informacje o stanie procesu, jego ID i przypisanych zasobach.",
+        "auto_id": 854
+    },
+    {
+        "type": "simple_select",
+        "question": "Do czego służy UID w systemach operacyjnych?",
+        "options": {
+            "A": "Do identyfikacji pliku",
+            "B": "Do identyfikacji procesu",
+            "C": "Do identyfikacji użytkownika",
+            "D": "Do identyfikacji dysku"
+        },
+        "correct": "C",
+        "explanation": "UID (User ID) jednoznacznie identyfikuje użytkownika w systemie.",
+        "auto_id": 855
+    },
+    {
+        "type": "simple_select",
+        "question": "Który z protokołów sieci bezprzewodowych jest używany w systemach Smart Home?",
+        "options": {
+            "A": "HTTP",
+            "B": "FTP",
+            "C": "ZigBee",
+            "D": "SMTP"
+        },
+        "correct": "C",
+        "explanation": "ZigBee to lekki protokół sieciowy często używany w urządzeniach Smart Home.",
+        "auto_id": 856
+    },
+    {
+        "type": "simple_select",
+        "question": "Który język NIE należy do technologii frontendowych?",
+        "options": {
+            "A": "HTML",
+            "B": "CSS",
+            "C": "Java",
+            "D": "JavaScript"
+        },
+        "correct": "C",
+        "explanation": "Java jest językiem backendowym, nie frontendowym.",
+        "auto_id": 857
+    },
+    {
+        "type": "simple_select",
+        "question": "Która warstwa architektury trójwarstwowej odpowiada za logikę biznesową?",
+        "options": {
+            "A": "Frontend",
+            "B": "Warstwa danych",
+            "C": "Backend",
+            "D": "Warstwa prezentacji"
+        },
+        "correct": "C",
+        "explanation": "Warstwa logiki biznesowej (backend) przetwarza dane i wykonuje operacje.",
+        "auto_id": 858
+    },
+    {
+        "type": "simple_select",
+        "question": "Jaką technikę najlepiej użyć do pobrania danych pogodowych z zewnętrznego źródła?",
+        "options": {
+            "A": "Formularz HTML",
+            "B": "API",
+            "C": "CSV",
+            "D": "Zgadywanie"
+        },
+        "correct": "B",
+        "explanation": "API pozwala pobierać dane dynamicznie z innych systemów, np. pogodowych.",
+        "auto_id": 859
     }
 ]
